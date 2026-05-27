@@ -1,0 +1,137 @@
+<!DOCTYPE html><html lang="ru"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>cartographic preparation - U:topos</title><meta name="description" content="cartographic preparation Avant l’apparition du site, de l’application et des premiers fragments publics de u:topos : biennale, un travail cartographique préparatoire était déjà en cours à Avallon. Depuis 2025, des micro-questionnaires sont recueillis auprès des habitants locaux et des réfugiés. Les enquêtes ont été menées&hellip;"><meta name="generator" content="Publii Open-Source CMS for Static Site"><link rel="canonical" href="https://u-topos.github.io/biennale/cartographic-preparation.html"><link rel="alternate" type="application/atom+xml" href="https://u-topos.github.io/biennale/feed.xml" title="U:topos - RSS"><link rel="alternate" type="application/json" href="https://u-topos.github.io/biennale/feed.json" title="U:topos - JSON"><meta property="og:title" content="cartographic preparation"><meta property="og:image" content="https://u-topos.github.io/biennale/media/posts/16/20-ref-20251212_175556-2.jpg"><meta property="og:image:width" content="1000"><meta property="og:image:height" content="225"><meta property="og:site_name" content="U:topos"><meta property="og:description" content="cartographic preparation Avant l’apparition du site, de l’application et des premiers fragments publics de u:topos : biennale, un travail cartographique préparatoire était déjà en cours à Avallon. Depuis 2025, des micro-questionnaires sont recueillis auprès des habitants locaux et des réfugiés. Les enquêtes ont été menées&hellip;"><meta property="og:url" content="https://u-topos.github.io/biennale/cartographic-preparation.html"><meta property="og:type" content="article"><link rel="shortcut icon" href="https://u-topos.github.io/biennale/media/website/favicon-2.png" type="image/x-icon"><link rel="preload" href="https://u-topos.github.io/biennale/assets/dynamic/fonts/robotoflex/robotoflex.woff2" as="font" type="font/woff2" crossorigin><link rel="stylesheet" href="https://u-topos.github.io/biennale/assets/css/style.css?v=2e2c198eac6d662ff6f66af8f22df1f7"><script type="application/ld+json">{"@context":"http://schema.org","@type":"Article","mainEntityOfPage":{"@type":"WebPage","@id":"https://u-topos.github.io/biennale/cartographic-preparation.html"},"headline":"cartographic preparation","datePublished":"2026-05-25T21:26+02:00","dateModified":"2026-05-27T16:28+02:00","image":{"@type":"ImageObject","url":"https://u-topos.github.io/biennale/media/posts/16/20-ref-20251212_175556-2.jpg","height":225,"width":1000},"description":"cartographic preparation Avant l’apparition du site, de l’application et des premiers fragments publics de u:topos : biennale, un travail cartographique préparatoire était déjà en cours à Avallon. Depuis 2025, des micro-questionnaires sont recueillis auprès des habitants locaux et des réfugiés. Les enquêtes ont été menées&hellip;","author":{"@type":"Person","name":"Dёni Mustafa","url":"https://u-topos.github.io/biennale/authors/dyoni-mustafa/"},"publisher":{"@type":"Organization","name":"Dёni Mustafa","logo":{"@type":"ImageObject","url":"https://u-topos.github.io/biennale/media/website/full-logo-03.png","height":2481,"width":12746}}}</script><noscript><style>img[loading] {
+                    opacity: 1;
+                }</style></noscript></head><body class="post-template"><div class="utopos-app-layer" id="utopos-app-layer"><div class="utopos-app-rotating"><span class="utopos-lang active">certaines traces et parcours<br>existent uniquement via l’application </span><span class="utopos-lang">some traces and routes<br>exist only through the application </span><span class="utopos-lang">некоторые следы и маршруты<br>существуют только через приложение</span></div><a class="utopos-app-visual-link" href="https://expo.dev/accounts/utopos22/projects/utopos/builds/633458f7-6904-47e6-88cb-0dddf08f912f" target="_blank" rel="noopener"><img class="utopos-app-visual-img" src="/media/app-01.jpg" alt="u:topos mobile application fragment"></a><div class="utopos-app-text"><div>application mobile U:TOPOS<br>version Android en développement</div><div class="utopos-app-install"><a href="https://expo.dev/accounts/utopos22/projects/utopos/builds/633458f7-6904-47e6-88cb-0dddf08f912f" target="_blank" rel="noopener">installer / tester avant la Biennale →</a></div></div></div><script>document.addEventListener('DOMContentLoaded', function () {
+
+  const block = document.getElementById('utopos-app-layer');
+  const firstItem = document.querySelector('.feed__item');
+  const mainContent = document.querySelector('.content, .post, .page, main');
+
+  if (block && firstItem && firstItem.parentNode) {
+    block.classList.add('utopos-app-home');
+    firstItem.parentNode.insertBefore(block, firstItem);
+  } else if (block && mainContent && mainContent.parentNode) {
+    block.classList.add('utopos-app-page');
+    mainContent.parentNode.insertBefore(block, mainContent);
+  }
+
+  const images = [
+    '/media/app-01.jpg',
+    '/media/app-02.jpg',
+    '/media/app-03.jpg',
+    '/media/app-04.jpg',
+    '/media/app-05.jpg',
+    '/media/app-06.jpg',
+    '/media/app-07.jpg'
+  ];
+
+  const visual = document.querySelector('.utopos-app-visual-img');
+
+  if (visual && images.length) {
+    const selected = images[Math.floor(Math.random() * images.length)];
+    visual.src = selected;
+  }
+
+  const langs = document.querySelectorAll('.utopos-lang');
+  const timings = [10000, 5000, 2000];
+
+  let index = 0;
+
+  function nextLang() {
+    langs[index].classList.remove('active');
+    index = (index + 1) % langs.length;
+    langs[index].classList.add('active');
+    setTimeout(nextLang, timings[index]);
+  }
+
+  if (langs.length) {
+    setTimeout(nextLang, timings[index]);
+  }
+
+});</script><header class="top js-header"><a class="logo" href="https://u-topos.github.io/biennale/"><img src="https://u-topos.github.io/biennale/media/website/full-logo-03.png" alt="U:topos" width="12746" height="2481"></a><nav class="navbar js-navbar"><button class="navbar__toggle js-toggle" aria-label="Menu" aria-haspopup="true" aria-expanded="false"><span class="navbar__toggle-box"><span class="navbar__toggle-inner">Menu</span></span></button><ul class="navbar__menu"><li><a href="https://u-topos.github.io/biennale/about.html" target="_self">À PROPOS</a></li><li><a href="https://u-topos.github.io/biennale/ou.html" target="_self">OÙ</a></li><li><a href="https://u-topos.github.io/biennale/archive.html" target="_self">APP</a></li><li><a href="https://u-topos.github.io/biennale/contact.html" target="_self">CONTACT</a></li></ul></nav></header><main class="post"><article class="content"><div class="hero"><header class="hero__content"><div class="wrapper"><h1>cartographic preparation</h1><div class="feed__meta content__meta"><a href="https://u-topos.github.io/biennale/authors/dyoni-mustafa/" class="feed__author">Dёni Mustafa</a> <time datetime="2026-05-25T21:26" class="feed__date">05/25/2026</time></div></div></header><figure class="hero__image"><div class="hero__image-wrapper"><img src="https://u-topos.github.io/biennale/media/posts/16/20-ref-20251212_175556-2.jpg" srcset="https://u-topos.github.io/biennale/media/posts/16/responsive/20-ref-20251212_175556-2-xs.jpg 640w, https://u-topos.github.io/biennale/media/posts/16/responsive/20-ref-20251212_175556-2-sm.jpg 768w, https://u-topos.github.io/biennale/media/posts/16/responsive/20-ref-20251212_175556-2-md.jpg 1024w, https://u-topos.github.io/biennale/media/posts/16/responsive/20-ref-20251212_175556-2-lg.jpg 1366w, https://u-topos.github.io/biennale/media/posts/16/responsive/20-ref-20251212_175556-2-xl.jpg 1600w, https://u-topos.github.io/biennale/media/posts/16/responsive/20-ref-20251212_175556-2-2xl.jpg 1920w" sizes="88vw" loading="eager" height="225" width="1000" alt=""></div></figure></div><div class="entry-wrapper content__entry"><h1>cartographic preparation</h1><h1 style="margin-top: 0px; color: #02192b; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif; font-weight: bold; letter-spacing: -0.54px; font-size: 1.80203em;"><figure class="post__image"><img loading="lazy" src="/media/posts/16/7-ref.jpg" alt="" width="500" height="135" sizes="(max-width: 1920px) 100vw, 1920px" srcset="/media/posts/16/responsive/7-ref-xs.jpg 640w, /media/posts/16/responsive/7-ref-sm.jpg 768w, /media/posts/16/responsive/7-ref-md.jpg 1024w, /media/posts/16/responsive/7-ref-lg.jpg 1366w, /media/posts/16/responsive/7-ref-xl.jpg 1600w, /media/posts/16/responsive/7-ref-2xl.jpg 1920w"></figure></h1><p> </p><p></p><p>Avant l’apparition du site, de l’application et des premiers fragments publics de u:topos : <em>biennale</em>, un travail cartographique préparatoire était déjà en cours à Avallon.</p><p>Depuis 2025, des micro-questionnaires sont recueillis auprès des habitants locaux et des réfugiés. Les enquêtes ont été menées dans des clubs de conversation, des classes de langue, des résidences sociales, des expositions, des bars et parmi des connaissances.</p><p> </p><figure class="post__image"><img loading="lazy" src="/media/posts/16/8-ref-20251204_160116.jpg" alt="" width="455" height="146" sizes="(max-width: 1920px) 100vw, 1920px" srcset="/media/posts/16/responsive/8-ref-20251204_160116-xs.jpg 640w, /media/posts/16/responsive/8-ref-20251204_160116-sm.jpg 768w, /media/posts/16/responsive/8-ref-20251204_160116-md.jpg 1024w, /media/posts/16/responsive/8-ref-20251204_160116-lg.jpg 1366w, /media/posts/16/responsive/8-ref-20251204_160116-xl.jpg 1600w, /media/posts/16/responsive/8-ref-20251204_160116-2xl.jpg 1920w"></figure><p>Cette recherche n’a pas été conçue comme une sociologie quantitative ou un système d’analyse statistique. Son objectif était différent : observer comment différents habitants perçoivent la ville, quels lieux ils nomment, où ils rencontrent l’art, quels espaces ils considèrent comme importants, lesquels ils évitent et lesquels restent absents de leur représentation d’Avallon.</p><p>À ce stade ont été réunis :<br>— 56 micro-questionnaires auprès des habitants locaux ;<br>— 22 micro-questionnaires auprès des réfugiés ;<br>— une série d’entretiens vidéo et d’autres relevés cartographiques.</p><figure class="post__image"><img loading="lazy" src="/media/posts/16/20-ref-20251212_175556.jpg" alt="" width="490" height="221" sizes="(max-width: 1920px) 100vw, 1920px" srcset="/media/posts/16/responsive/20-ref-20251212_175556-xs.jpg 640w, /media/posts/16/responsive/20-ref-20251212_175556-sm.jpg 768w, /media/posts/16/responsive/20-ref-20251212_175556-md.jpg 1024w, /media/posts/16/responsive/20-ref-20251212_175556-lg.jpg 1366w, /media/posts/16/responsive/20-ref-20251212_175556-xl.jpg 1600w, /media/posts/16/responsive/20-ref-20251212_175556-2xl.jpg 1920w"></figure><p>Progressivement, certaines réponses ont commencé à se répéter.</p><p>À partir des répétitions, des écarts, des vides, des trajectoires et des concentrations locales, une structure spatiale distincte de la ville a commencé à apparaître.</p><p>La carte n’a jamais été définie à l’avance et ne cherchait pas à reproduire littéralement Avallon.</p><p> </p><figure class="post__image"><img loading="lazy" src="/media/posts/16/8-loc-20251127_171925.jpg" alt="" width="460" height="167" sizes="(max-width: 1920px) 100vw, 1920px" srcset="/media/posts/16/responsive/8-loc-20251127_171925-xs.jpg 640w, /media/posts/16/responsive/8-loc-20251127_171925-sm.jpg 768w, /media/posts/16/responsive/8-loc-20251127_171925-md.jpg 1024w, /media/posts/16/responsive/8-loc-20251127_171925-lg.jpg 1366w, /media/posts/16/responsive/8-loc-20251127_171925-xl.jpg 1600w, /media/posts/16/responsive/8-loc-20251127_171925-2xl.jpg 1920w"></figure><p> </p><p>Elle s’est progressivement constituée à partir de traces de perception, de différences entre les couches, de trajectoires récurrentes, de zones d’évitement, de fractures sociales, de points de concentration et d’espaces présentant différents degrés de visibilité culturelle.</p><p>Les matériaux collectés sont progressivement traduits sous d’autres formes : tableaux, agrégats, schémas expérimentaux, légendes de couches et cartes.</p><p>À ce stade, environ 60 nœuds ont été identifiés, incluant des points, des zones diffuses, des parcours et des territoires sociaux.</p><p> </p><figure class="post__image"><img loading="lazy" src="/media/posts/16/12-loc-20251202_180953.jpg" alt="" width="510" height="357" sizes="(max-width: 1920px) 100vw, 1920px" srcset="/media/posts/16/responsive/12-loc-20251202_180953-xs.jpg 640w, /media/posts/16/responsive/12-loc-20251202_180953-sm.jpg 768w, /media/posts/16/responsive/12-loc-20251202_180953-md.jpg 1024w, /media/posts/16/responsive/12-loc-20251202_180953-lg.jpg 1366w, /media/posts/16/responsive/12-loc-20251202_180953-xl.jpg 1600w, /media/posts/16/responsive/12-loc-20251202_180953-2xl.jpg 1920w"></figure><p> </p><p>Certains nœuds existent simultanément dans plusieurs couches de la carte. Certains restent instables ou demandent encore une vérification supplémentaire. Certains n’apparaissent qu’à l’intérieur de groupes de perception spécifiques.</p><p>La carte complète n’est pas encore publiée.</p><p>Seuls certains fragments du processus restent visibles : fragments de micro-questionnaires, détails cartographiques, schémas intermédiaires et traces du traitement de l’information.</p><p> </p><figure class="post__image"><img loading="lazy" src="/media/posts/16/14-loc-20251202_181036.jpg" alt="" width="480" height="166" sizes="(max-width: 1920px) 100vw, 1920px" srcset="/media/posts/16/responsive/14-loc-20251202_181036-xs.jpg 640w, /media/posts/16/responsive/14-loc-20251202_181036-sm.jpg 768w, /media/posts/16/responsive/14-loc-20251202_181036-md.jpg 1024w, /media/posts/16/responsive/14-loc-20251202_181036-lg.jpg 1366w, /media/posts/16/responsive/14-loc-20251202_181036-xl.jpg 1600w, /media/posts/16/responsive/14-loc-20251202_181036-2xl.jpg 1920w"></figure><p> </p><p>Ainsi, la structure cartographique de la biennale continue de se constituer progressivement à partir de manières divergentes de voir une même ville.</p></div><footer class="content__footer"><div class="entry-wrapper"><div class="content__actions"></div></div><nav class="content__nav"><div class="wrapper"><div class="content__nav-inner"><div class="content__nav-prev"><a href="https://u-topos.github.io/biennale/conditions.html" class="content__nav-link" rel="prev"><figure class="content__nav-image"><img src="https://u-topos.github.io/biennale/media/posts/15/responsive/P1250012-2-xs.JPG" class="lazyload" loading="lazy" alt="" height="1502" width="1502"></figure><div><span>Previous</span> conditions</div></a></div><div class="content__nav-next"><a href="https://u-topos.github.io/biennale/situation-de-deplacement.html" class="content__nav-link" rel="next"><div><span>Next</span> situation de déplacement</div><figure class="content__nav-image"><img src="https://u-topos.github.io/biennale/media/posts/17/responsive/SITUATION-DE-DEPLACEMENT-1-2-xs.jpg" class="lazyload" loading="lazy" alt="" height="1500" width="1500"></figure></a></div></div></div></nav></footer></article></main><footer class="footer footer--glued"><div class="wrapper"><div class="footer__copyright"><p>u:topos : <em>biennale</em><br>Avallon 2027<br><span class="footer-app-link"><a href="/app">installer l’application ↗</a></span></p></div><button id="backToTop" class="footer__bttop" aria-label="Back to top" title="Back to top"><svg width="20" height="20"><use xlink:href="https://u-topos.github.io/biennale/assets/svg/svg-map.svg#toparrow"/></svg></button></div></footer><script defer="defer" src="https://u-topos.github.io/biennale/assets/js/scripts.min.js?v=dafec4f87fead6718cb125f0b0fc8441"></script><script>window.publiiThemeMenuConfig={mobileMenuMode:'overlay',animationSpeed:300,submenuWidth: 240,doubleClickTime:500,mobileMenuExpandableSubmenus:true,relatedContainerForOverlayMenuSelector:'.top'};</script><script>var images = document.querySelectorAll('img[loading]');
+        for (var i = 0; i < images.length; i++) {
+            if (images[i].complete) {
+                images[i].classList.add('is-loaded');
+            } else {
+                images[i].addEventListener('load', function () {
+                    this.classList.add('is-loaded');
+                }, false);
+            }
+        }</script><div id="utopos-cursor"></div><div id="utopos-coordinates"></div><script>const cursor = document.getElementById('utopos-cursor');
+const coords = document.getElementById('utopos-coordinates');
+
+let idleTimer;
+
+document.addEventListener('mousemove', (e) => {
+
+  cursor.style.left = e.clientX + 'px';
+  cursor.style.top = e.clientY + 'px';
+
+  coords.style.left = (e.clientX + 10) + 'px';
+  coords.style.top = (e.clientY + 6) + 'px';
+
+  coords.textContent = `${e.clientX} · ${e.clientY}`;
+
+  cursor.classList.remove('idle');
+  coords.classList.remove('visible');
+
+  clearTimeout(idleTimer);
+
+  idleTimer = setTimeout(() => {
+    cursor.classList.add('idle');
+    coords.classList.add('visible');
+  }, 700);
+});</script><script>document.addEventListener('DOMContentLoaded', function () {
+  const logo = document.querySelector('.logo');
+  if (!logo) return;
+
+  logo.classList.add('utopos-logo-state');
+
+  logo.innerHTML = `
+  <span class="utopos-logo-main">
+    <span class="utopos-logo-u">u:</span>
+    <span class="utopos-logo-rest">topos:<em>biennale</em></span>
+  </span>
+
+  <span class="utopos-logo-meta">
+    <img class="utopos-logo-lang active" src="/media/2027-underlogo-fr.png" alt="">
+    <img class="utopos-logo-lang" src="/media/2027-underlogo-eng.png" alt="">
+    <img class="utopos-logo-lang" src="/media/2027-underlogo-ru.png" alt="">
+  </span>
+`;
+
+  const langs = logo.querySelectorAll('.utopos-logo-lang');
+  const timings = [4200, 2800, 2400];
+  let index = 0;
+  let timer = null;
+
+  function showNextLogoLang() {
+    langs[index].classList.remove('active');
+    index = (index + 1) % langs.length;
+    langs[index].classList.add('active');
+    timer = setTimeout(showNextLogoLang, timings[index]);
+  }
+
+  logo.addEventListener('mouseenter', function () {
+    clearTimeout(timer);
+    index = 0;
+
+    langs.forEach(function (lang) {
+      lang.classList.remove('active');
+    });
+
+    langs[0].classList.add('active');
+
+    timer = setTimeout(showNextLogoLang, timings[0]);
+  });
+
+  logo.addEventListener('mouseleave', function () {
+    clearTimeout(timer);
+    index = 0;
+
+    langs.forEach(function (lang) {
+      lang.classList.remove('active');
+    });
+
+    langs[0].classList.add('active');
+  });
+});</script></body></html>

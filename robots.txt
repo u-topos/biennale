@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://u-topos.github.io/biennale/sitemap.xml
