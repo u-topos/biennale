@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="ru"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>hidden-traces - U:topos</title><meta name="generator" content="Publii Open-Source CMS for Static Site"><link rel="canonical" href="./hidden-traces.html"><link rel="shortcut icon" href="./media/website/favicon-2.png" type="image/x-icon"><link rel="preload" href="./assets/dynamic/fonts/robotoflex/robotoflex.woff2" as="font" type="font/woff2" crossorigin><link rel="stylesheet" href="./assets/css/style.css?v=c0577ff140ca7b729cef6d10a14ac346"><script type="application/ld+json">{"@context":"http://schema.org","@type":"Article","mainEntityOfPage":{"@type":"WebPage","@id":"./hidden-traces.html"},"headline":"hidden-traces","datePublished":"2026-05-19T18:13+02:00","dateModified":"2026-05-19T18:13+02:00","image":{"@type":"ImageObject","url":"./media/website/full-logo-03.png","height":2481,"width":12746},"description":"","author":{"@type":"Person","name":"Dёni Mustafa","url":"./authors/dyoni-mustafa/"},"publisher":{"@type":"Organization","name":"Dёni Mustafa","logo":{"@type":"ImageObject","url":"./media/website/full-logo-03.png","height":2481,"width":12746}}}</script><noscript><style>img[loading] {
+<!DOCTYPE html><html lang="ru"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>hidden-traces - U:topos</title><meta name="generator" content="Publii Open-Source CMS for Static Site"><link rel="canonical" href="./hidden-traces.html"><link rel="shortcut icon" href="./media/website/favicon-2.png" type="image/x-icon"><link rel="preload" href="./assets/dynamic/fonts/robotoflex/robotoflex.woff2" as="font" type="font/woff2" crossorigin><link rel="stylesheet" href="./assets/css/style.css?v=093967b5fa4b967db986ba29b880fba2"><script type="application/ld+json">{"@context":"http://schema.org","@type":"Article","mainEntityOfPage":{"@type":"WebPage","@id":"./hidden-traces.html"},"headline":"hidden-traces","datePublished":"2026-05-19T18:13+02:00","dateModified":"2026-05-19T18:13+02:00","image":{"@type":"ImageObject","url":"./media/website/full-logo-03.png","height":2481,"width":12746},"description":"","author":{"@type":"Person","name":"Dёni Mustafa","url":"./authors/dyoni-mustafa/"},"publisher":{"@type":"Organization","name":"Dёni Mustafa","logo":{"@type":"ImageObject","url":"./media/website/full-logo-03.png","height":2481,"width":12746}}}</script><noscript><style>img[loading] {
                     opacity: 1;
                 }</style></noscript></head><body class="page-template"><div class="utopos-app-layer" id="utopos-app-layer"><div class="utopos-app-rotating"><span class="utopos-lang active">certaines traces et parcours<br>existent uniquement via l’application </span><span class="utopos-lang">some traces and routes<br>exist only through the application </span><span class="utopos-lang">некоторые следы и маршруты<br>существуют только через приложение</span></div><a class="utopos-app-visual-link" href="https://expo.dev/accounts/utopos22/projects/utopos/builds/633458f7-6904-47e6-88cb-0dddf08f912f" target="_blank" rel="noopener"><img class="utopos-app-visual-img" src="media/files/app-01.jpg" alt="u:topos mobile application fragment"></a><div class="utopos-app-text"><div>application mobile U:TOPOS<br>version Android en développement</div><div class="utopos-app-install"><a href="https://expo.dev/accounts/utopos22/projects/utopos/builds/633458f7-6904-47e6-88cb-0dddf08f912f" target="_blank" rel="noopener">installer / tester avant la Biennale →</a></div></div></div><script>document.addEventListener('DOMContentLoaded', function () {
 
@@ -151,21 +151,47 @@ document.addEventListener('mousemove', (e) => {
     langs[0].classList.add('active');
   });
 
-  function updateMobileLogoState() {
-    if (window.innerWidth > 767) {
-      logo.classList.remove('is-mobile-open');
-      return;
-    }
-
-    if (window.scrollY < 20) {
-      logo.classList.add('is-mobile-open');
-    } else {
-      logo.classList.remove('is-mobile-open');
-    }
+ function updateMobileLogoState() {
+  if (window.innerWidth > 767) {
+    logo.classList.remove('is-mobile-open');
+    document.body.classList.remove('utopos-mobile-scrolled');
+    return;
   }
+
+  if (window.scrollY < 20) {
+    logo.classList.add('is-mobile-open');
+    document.body.classList.remove('utopos-mobile-scrolled');
+  } else {
+    logo.classList.remove('is-mobile-open');
+    document.body.classList.add('utopos-mobile-scrolled');
+  }
+}
 
   updateMobileLogoState();
 
   window.addEventListener('scroll', updateMobileLogoState, { passive: true });
   window.addEventListener('resize', updateMobileLogoState);
+});</script><script>document.addEventListener('DOMContentLoaded', function () {
+  if (document.querySelector('.utopos-fixedbar')) return;
+
+  const bar = document.createElement('div');
+  bar.className = 'utopos-fixedbar';
+
+  bar.innerHTML = `
+    <a class="utopos-fixedbar-logo" href="index.html" aria-label="U:TOPOS">
+      <img src="assets/img/u-mark.png" alt="">
+    </a>
+    <button class="utopos-fixedbar-menu" type="button" aria-label="Menu">::</button>
+  `;
+
+  document.body.appendChild(bar);
+
+  const fixedbarMenu = bar.querySelector('.utopos-fixedbar-menu');
+  const realMenuToggle = document.querySelector('.navbar__toggle');
+
+  if (fixedbarMenu && realMenuToggle) {
+    fixedbarMenu.addEventListener('click', function () {
+      realMenuToggle.click();
+    });
+  }
 });</script></body></html>
