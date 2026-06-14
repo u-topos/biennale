@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="ru"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Первая Биеннале в Аваллоне - U:topos</title><meta name="description" content="первая биеннале в аваллоне"><meta name="generator" content="Publii Open-Source CMS for Static Site"><link rel="canonical" href="./pervaya-biennale-v-avallone.html"><link rel="shortcut icon" href="./media/website/favicon-2.png" type="image/x-icon"><link rel="preload" href="./assets/dynamic/fonts/robotoflex/robotoflex.woff2" as="font" type="font/woff2" crossorigin><link rel="stylesheet" href="./assets/css/style.css?v=0cf25c42d101441264645bad35653f61"><script type="application/ld+json">{"@context":"http://schema.org","@type":"Article","mainEntityOfPage":{"@type":"WebPage","@id":"./pervaya-biennale-v-avallone.html"},"headline":"Первая Биеннале в Аваллоне","datePublished":"2026-05-24T21:10+02:00","dateModified":"2026-05-27T16:39+02:00","image":{"@type":"ImageObject","url":"./media/website/full-logo-03.png","height":2481,"width":12746},"description":"первая биеннале в аваллоне","author":{"@type":"Person","name":"Dёni Mustafa","url":"./authors/dyoni-mustafa/"},"publisher":{"@type":"Organization","name":"Dёni Mustafa","logo":{"@type":"ImageObject","url":"./media/website/full-logo-03.png","height":2481,"width":12746}}}</script><noscript><style>img[loading] {
+<!DOCTYPE html><html lang="ru"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Первая Биеннале в Аваллоне - U:topos</title><meta name="description" content="первая биеннале в аваллоне"><meta name="generator" content="Publii Open-Source CMS for Static Site"><link rel="canonical" href="./pervaya-biennale-v-avallone.html"><link rel="shortcut icon" href="./media/website/favicon-2.png" type="image/x-icon"><link rel="preload" href="./assets/dynamic/fonts/robotoflex/robotoflex.woff2" as="font" type="font/woff2" crossorigin><link rel="stylesheet" href="./assets/css/style.css?v=408d796be51f9d59428524c96035f04a"><script type="application/ld+json">{"@context":"http://schema.org","@type":"Article","mainEntityOfPage":{"@type":"WebPage","@id":"./pervaya-biennale-v-avallone.html"},"headline":"Первая Биеннале в Аваллоне","datePublished":"2026-05-24T21:10+02:00","dateModified":"2026-05-27T16:39+02:00","image":{"@type":"ImageObject","url":"./media/website/full-logo-03.png","height":2481,"width":12746},"description":"первая биеннале в аваллоне","author":{"@type":"Person","name":"Dёni Mustafa","url":"./authors/dyoni-mustafa/"},"publisher":{"@type":"Organization","name":"Dёni Mustafa","logo":{"@type":"ImageObject","url":"./media/website/full-logo-03.png","height":2481,"width":12746}}}</script><noscript><style>img[loading] {
                     opacity: 1;
                 }</style></noscript></head><body class="page-template"><div class="utopos-app-layer" id="utopos-app-layer"><div class="utopos-app-rotating"><span class="utopos-lang active">certaines traces et parcours<br>existent uniquement via l’application </span><span class="utopos-lang">some traces and routes<br>exist only through the application </span><span class="utopos-lang">некоторые следы и маршруты<br>существуют только через приложение</span></div><a class="utopos-app-visual-link" href="https://drive.google.com/file/d/1pIqCOuoyIwChFCC0FvRCTaQzzgG-h5Xe/view?usp=drive_link" target="_blank" rel="noopener"><img class="utopos-app-visual-img" src="media/files/app-01.jpg" alt="u:topos mobile application fragment"></a><div class="utopos-app-text"><div>application mobile U:TOPOS<br>version Android en développement</div><div class="utopos-app-install"><a href="https://drive.google.com/file/d/1pIqCOuoyIwChFCC0FvRCTaQzzgG-h5Xe/view?usp=drive_link" target="_blank" rel="noopener">installer / tester avant la Biennale →</a></div></div></div><script>document.addEventListener('DOMContentLoaded', function () {
 
@@ -193,5 +193,43 @@ document.addEventListener('mousemove', (e) => {
     fixedbarMenu.addEventListener('click', function () {
       realMenuToggle.click();
     });
+  }
+});</script><script>document.addEventListener('DOMContentLoaded', function () {
+  const footerWrapper = document.querySelector('.footer .wrapper');
+  if (!footerWrapper) return;
+
+  if (footerWrapper.querySelector('.utopos-footer-slogan')) return;
+
+  const slogan = document.createElement('div');
+  slogan.className = 'utopos-footer-slogan';
+
+  slogan.innerHTML = `
+    <span class="utopos-footer-slogan-lang active">
+      le centre est partout, la périphérie nulle part
+    </span>
+    <span class="utopos-footer-slogan-lang">
+      the center is everywhere, the periphery is nowhere
+    </span>
+    <span class="utopos-footer-slogan-lang">
+      центр везде, периферия нигде
+    </span>
+  `;
+
+  footerWrapper.appendChild(slogan);
+
+  const langs = slogan.querySelectorAll('.utopos-footer-slogan-lang');
+  const timings = [5200, 3200, 2400];
+
+  let index = 0;
+
+  function nextFooterSlogan() {
+    langs[index].classList.remove('active');
+    index = (index + 1) % langs.length;
+    langs[index].classList.add('active');
+    setTimeout(nextFooterSlogan, timings[index]);
+  }
+
+  if (langs.length) {
+    setTimeout(nextFooterSlogan, timings[index]);
   }
 });</script></body></html>
