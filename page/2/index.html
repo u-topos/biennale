@@ -1,0 +1,235 @@
+<!DOCTYPE html><html lang="ru"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>U:topos</title><meta name="generator" content="Publii Open-Source CMS for Static Site"><link rel="canonical" href="./../../page/2/"><link rel="shortcut icon" href="./../../media/website/favicon-2.png" type="image/x-icon"><link rel="prev" href="./../../"><link rel="preload" href="./../../assets/dynamic/fonts/robotoflex/robotoflex.woff2" as="font" type="font/woff2" crossorigin><link rel="stylesheet" href="./../../assets/css/style.css?v=2c2ed70baf09e579ac16f767ac5f9f82"><script type="application/ld+json">{"@context":"http://schema.org","@type":"Organization","name":"U:topos","logo":"./../../media/website/full-logo-03.png","url":"./../../"}</script><noscript><style>img[loading] {
+                    opacity: 1;
+                }</style></noscript></head><body class="pagination-templateblogindex-template"><div class="utopos-app-layer" id="utopos-app-layer"><div class="utopos-app-rotating"><span class="utopos-lang active">certaines traces et parcours<br>existent uniquement via l’application </span><span class="utopos-lang">some traces and routes<br>exist only through the application </span><span class="utopos-lang">некоторые следы и маршруты<br>существуют только через приложение</span></div><a class="utopos-app-visual-link" href="https://drive.google.com/file/d/1pIqCOuoyIwChFCC0FvRCTaQzzgG-h5Xe/view?usp=drive_link" target="_blank" rel="noopener"><img class="utopos-app-visual-img" src="media/files/app-01.jpg" alt="u:topos mobile application fragment"></a><div class="utopos-app-text"><div>application mobile U:TOPOS<br>version Android en développement</div><div class="utopos-app-install"><a href="https://drive.google.com/file/d/1pIqCOuoyIwChFCC0FvRCTaQzzgG-h5Xe/view?usp=drive_link" target="_blank" rel="noopener">installer / tester avant la Biennale →</a></div></div></div><script>document.addEventListener('DOMContentLoaded', function () {
+
+  const block = document.getElementById('utopos-app-layer');
+  const firstItem = document.querySelector('.feed__item');
+  const mainContent = document.querySelector('.content, .post, .page, main');
+
+  if (block && firstItem && firstItem.parentNode) {
+    block.classList.add('utopos-app-home');
+    firstItem.parentNode.insertBefore(block, firstItem);
+  } else if (block && mainContent && mainContent.parentNode) {
+    block.classList.add('utopos-app-page');
+    mainContent.parentNode.insertBefore(block, mainContent);
+  }
+
+  const images = [
+    'media/files/app-01.jpg',
+    'media/files/app-02.jpg',
+    'media/files/app-03.jpg',
+    'media/files/app-04.jpg',
+    'media/files/app-05.jpg',
+    'media/files/app-06.jpg',
+    'media/files/app-07.jpg'
+  ];
+
+  const visual = document.querySelector('.utopos-app-visual-img');
+
+  if (visual && images.length) {
+    const selected = images[Math.floor(Math.random() * images.length)];
+    visual.src = selected;
+  }
+
+  const langs = document.querySelectorAll('.utopos-lang');
+  const timings = [10000, 5000, 2000];
+
+  let index = 0;
+
+  function nextLang() {
+    langs[index].classList.remove('active');
+    index = (index + 1) % langs.length;
+    langs[index].classList.add('active');
+    setTimeout(nextLang, timings[index]);
+  }
+
+  if (langs.length) {
+    setTimeout(nextLang, timings[index]);
+  }
+
+});</script><header class="top js-header"><a class="logo" href="./../../"><img src="./../../media/website/full-logo-03.png" alt="U:topos" width="12746" height="2481"></a><nav class="navbar js-navbar"><button class="navbar__toggle js-toggle" aria-label="Menu" aria-haspopup="true" aria-expanded="false"><span class="navbar__toggle-box"><span class="navbar__toggle-inner">Menu</span></span></button><ul class="navbar__menu"><li><a href="./../../about.html" target="_self">À PROPOS</a></li><li><a href="./../../ou.html" target="_self">OÙ</a></li><li><a href="./../../archive.html" target="_self">APP</a></li><li><a href="./../../contact.html" target="_self">CONTACT</a></li></ul></nav></header><main><div class="hero hero--noimage"></div><div class="wrapper feed"><article class="feed__item feed__item--centered"><figure class="feed__image"><img src="./../../media/posts/1/dm-postcard-fi.jpg" srcset="./../../media/posts/1/responsive/dm-postcard-fi-xs.jpg 640w, ./../../media/posts/1/responsive/dm-postcard-fi-sm.jpg 768w, ./../../media/posts/1/responsive/dm-postcard-fi-md.jpg 1024w" sizes="(min-width: 600px) calc(4.38vw + 143px), 87.86vw" loading="lazy" height="604" width="597" alt="Avallon postcard by Dёni Mustafa with handwritten text about a future Biennale, 2026"></figure><div class="feed__content"><header><h2 class="feed__title"><a href="./../../premiere-trace-publique.html">première trace publique de u:topos : biennale</a></h2></header><p>première trace publique de u:topos : biennale The first public trace of u:topos : biennale appeared inside an exhibition at La Tannerie in Avallon. At this stage, the biennale did not yet exist as a public structure, but only as a sentence fixed in a&hellip;</p><a href="./../../premiere-trace-publique.html" class="readmore feed__readmore">continuer le passage...</a></div></article><nav class="pagination desc" aria-label="Pagination"><div class="pagination__item"><a href="./../../" class="btn btn--icon" rel="prev"><span>Next</span> <svg width="20" height="20" aria-hidden="true"><use xlink:href="./../../assets/svg/svg-map.svg#arrow-next"/></svg></a></div></nav></div></main><footer class="footer"><div class="wrapper"><div class="footer__copyright"><p>u:topos : <em>biennale</em><br>Avallon 2027<br><span class="footer-app-link"><a href="/app">installer l’application ↗</a></span></p></div><button id="backToTop" class="footer__bttop" aria-label="Back to top" title="Back to top"><svg width="20" height="20"><use xlink:href="./../../assets/svg/svg-map.svg#toparrow"/></svg></button></div></footer><script defer="defer" src="./../../assets/js/scripts.min.js?v=dafec4f87fead6718cb125f0b0fc8441"></script><script>window.publiiThemeMenuConfig={mobileMenuMode:'overlay',animationSpeed:300,submenuWidth: 240,doubleClickTime:500,mobileMenuExpandableSubmenus:true,relatedContainerForOverlayMenuSelector:'.top'};</script><script>var images = document.querySelectorAll('img[loading]');
+        for (var i = 0; i < images.length; i++) {
+            if (images[i].complete) {
+                images[i].classList.add('is-loaded');
+            } else {
+                images[i].addEventListener('load', function () {
+                    this.classList.add('is-loaded');
+                }, false);
+            }
+        }</script><div id="utopos-cursor"></div><div id="utopos-coordinates"></div><script>const cursor = document.getElementById('utopos-cursor');
+const coords = document.getElementById('utopos-coordinates');
+
+let idleTimer;
+
+document.addEventListener('mousemove', (e) => {
+
+  cursor.style.left = e.clientX + 'px';
+  cursor.style.top = e.clientY + 'px';
+
+  coords.style.left = (e.clientX + 10) + 'px';
+  coords.style.top = (e.clientY + 6) + 'px';
+
+  coords.textContent = `${e.clientX} · ${e.clientY}`;
+
+  cursor.classList.remove('idle');
+  coords.classList.remove('visible');
+
+  clearTimeout(idleTimer);
+
+  idleTimer = setTimeout(() => {
+    cursor.classList.add('idle');
+    coords.classList.add('visible');
+  }, 700);
+});</script><script>document.addEventListener('DOMContentLoaded', function () {
+  const logo = document.querySelector('.logo');
+  if (!logo) return;
+
+  const img = logo.querySelector('img');
+  if (!img) return;
+
+  logo.classList.add('utopos-logo-state');
+
+  if (logo.querySelector('.utopos-logo-crop')) return;
+
+  const basePath = 'assets/img/';
+
+  const crop = document.createElement('span');
+  crop.className = 'utopos-logo-crop';
+
+  const main = document.createElement('span');
+  main.className = 'utopos-logo-main';
+
+  img.classList.add('utopos-logo-img');
+
+  main.appendChild(img);
+  crop.appendChild(main);
+
+  const meta = document.createElement('span');
+  meta.className = 'utopos-logo-meta';
+  meta.innerHTML = `
+    <img class="utopos-logo-lang active" src="${basePath}2027-underlogo-fr.png" alt="">
+    <img class="utopos-logo-lang" src="${basePath}2027-underlogo-eng.png" alt="">
+    <img class="utopos-logo-lang" src="${basePath}2027-underlogo-ru.png" alt="">
+  `;
+
+  logo.innerHTML = '';
+  logo.appendChild(crop);
+  logo.appendChild(meta);
+
+  const langs = logo.querySelectorAll('.utopos-logo-lang');
+  const timings = [4200, 2800, 2400];
+  let index = 0;
+  let timer = null;
+
+  function showNextLogoLang() {
+    langs[index].classList.remove('active');
+    index = (index + 1) % langs.length;
+    langs[index].classList.add('active');
+    timer = setTimeout(showNextLogoLang, timings[index]);
+  }
+
+  logo.addEventListener('mouseenter', function () {
+    clearTimeout(timer);
+    index = 0;
+
+    langs.forEach(function (lang) {
+      lang.classList.remove('active');
+    });
+
+    langs[0].classList.add('active');
+    timer = setTimeout(showNextLogoLang, timings[0]);
+  });
+
+  logo.addEventListener('mouseleave', function () {
+    clearTimeout(timer);
+    index = 0;
+
+    langs.forEach(function (lang) {
+      lang.classList.remove('active');
+    });
+
+    langs[0].classList.add('active');
+  });
+
+ function updateMobileLogoState() {
+  if (window.innerWidth > 767) {
+    logo.classList.remove('is-mobile-open');
+    document.body.classList.remove('utopos-mobile-scrolled');
+    return;
+  }
+
+  if (window.scrollY < 20) {
+    logo.classList.add('is-mobile-open');
+    document.body.classList.remove('utopos-mobile-scrolled');
+  } else {
+    logo.classList.remove('is-mobile-open');
+    document.body.classList.add('utopos-mobile-scrolled');
+  }
+}
+
+  updateMobileLogoState();
+
+  window.addEventListener('scroll', updateMobileLogoState, { passive: true });
+  window.addEventListener('resize', updateMobileLogoState);
+});</script><script>document.addEventListener('DOMContentLoaded', function () {
+  if (document.querySelector('.utopos-fixedbar')) return;
+
+  const bar = document.createElement('div');
+  bar.className = 'utopos-fixedbar';
+
+  bar.innerHTML = `
+    <a class="utopos-fixedbar-logo" href="index.html" aria-label="U:TOPOS">
+      <img src="assets/img/u-mark.png" alt="">
+    </a>
+    <button class="utopos-fixedbar-menu" type="button" aria-label="Menu">::</button>
+  `;
+
+  document.body.appendChild(bar);
+
+  const fixedbarMenu = bar.querySelector('.utopos-fixedbar-menu');
+  const realMenuToggle = document.querySelector('.navbar__toggle');
+
+  if (fixedbarMenu && realMenuToggle) {
+    fixedbarMenu.addEventListener('click', function () {
+      realMenuToggle.click();
+    });
+  }
+});</script><script>document.addEventListener('DOMContentLoaded', function () {
+  const footerWrapper = document.querySelector('.footer .wrapper');
+  if (!footerWrapper) return;
+
+  if (footerWrapper.querySelector('.utopos-footer-slogan')) return;
+
+  const slogan = document.createElement('div');
+  slogan.className = 'utopos-footer-slogan';
+
+  slogan.innerHTML = `
+    <span class="utopos-footer-slogan-lang active">
+      le centre est partout, la périphérie nulle part
+    </span>
+    <span class="utopos-footer-slogan-lang">
+      the center is everywhere, the periphery is nowhere
+    </span>
+    <span class="utopos-footer-slogan-lang">
+      центр везде, периферия нигде
+    </span>
+  `;
+
+  footerWrapper.appendChild(slogan);
+
+  const langs = slogan.querySelectorAll('.utopos-footer-slogan-lang');
+  const timings = [5200, 3200, 2400];
+
+  let index = 0;
+
+  function nextFooterSlogan() {
+    langs[index].classList.remove('active');
+    index = (index + 1) % langs.length;
+    langs[index].classList.add('active');
+    setTimeout(nextFooterSlogan, timings[index]);
+  }
+
+  if (langs.length) {
+    setTimeout(nextFooterSlogan, timings[index]);
+  }
+});</script></body></html>
