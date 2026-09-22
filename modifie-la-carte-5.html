@@ -239,4 +239,18 @@ document.addEventListener('mousemove', (e) => {
   if (langs.length) {
     setTimeout(nextFooterSlogan, timings[index]);
   }
+});</script><script>document.addEventListener('DOMContentLoaded', function () {
+  document.querySelectorAll('.feed__item').forEach(function (item) {
+    const titleLink = item.querySelector('.feed__title a');
+    const excerpt = item.querySelector('.feed__content > p');
+
+    if (!titleLink || !excerpt) return;
+
+    const title = titleLink.textContent.trim();
+    const text = excerpt.textContent.trim();
+
+    if (text.toLowerCase().startsWith(title.toLowerCase())) {
+      excerpt.textContent = text.slice(title.length).trim();
+    }
+  });
 });</script></body></html>
