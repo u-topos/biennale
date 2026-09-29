@@ -1,2 +1,3 @@
 User-agent: *
 Disallow:
+Sitemap: https://utopos-biennale.net/sitemap.xml
