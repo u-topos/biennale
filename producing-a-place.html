@@ -18,7 +18,13 @@
     if (!target) return;
 
     const rect = target.getBoundingClientRect();
-    block.style.paddingLeft = rect.left + 'px';
+    const inset =
+  window.matchMedia('(max-width: 767px)').matches &&
+  target.classList.contains('content__entry')
+    ? parseFloat(getComputedStyle(target).paddingLeft) || 0
+    : 0;
+
+block.style.paddingLeft = (rect.left + inset) + 'px';
   }
 
   requestAnimationFrame(alignAccessLink);
