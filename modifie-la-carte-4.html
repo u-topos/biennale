@@ -401,4 +401,59 @@ document.addEventListener('mousemove', (e) => {
     }
     item.trigger.addEventListener('click', function (e) { e.preventDefault(); openAt(i); });
   });
+});</script><style>/* White U:TOPOS cursor inside lightbox */
+
+#ut-lightbox,
+#ut-lightbox * {
+  cursor: none !important;
+}
+
+#ut-lightbox #utopos-cursor {
+  background: #ffffff !important;
+}
+
+#ut-lightbox #utopos-cursor.idle {
+  background: transparent !important;
+  border-color: #ffffff !important;
+}
+
+#ut-lightbox #utopos-coordinates {
+  color: #ffffff !important;
+}
+
+@media (pointer: coarse) {
+  #ut-lightbox,
+  #ut-lightbox * {
+    cursor: auto !important;
+  }
+}</style><script>document.addEventListener('DOMContentLoaded', function () {
+  const lightbox = document.getElementById('ut-lightbox');
+  const cursor = document.getElementById('utopos-cursor');
+  const coordinates = document.getElementById('utopos-coordinates');
+
+  if (!lightbox || !cursor || !coordinates) return;
+
+  const cursorAnchor = document.createComment('cursor-position');
+  const coordinatesAnchor = document.createComment('coordinates-position');
+
+  cursor.parentNode.insertBefore(cursorAnchor, cursor);
+  coordinates.parentNode.insertBefore(coordinatesAnchor, coordinates);
+
+  const observer = new MutationObserver(function () {
+    if (lightbox.open) {
+      lightbox.appendChild(cursor);
+      lightbox.appendChild(coordinates);
+    } else {
+      cursorAnchor.parentNode.insertBefore(cursor, cursorAnchor.nextSibling);
+      coordinatesAnchor.parentNode.insertBefore(
+        coordinates,
+        coordinatesAnchor.nextSibling
+      );
+    }
+  });
+
+  observer.observe(lightbox, {
+    attributes: true,
+    attributeFilter: ['open']
+  });
 });</script></body></html>
