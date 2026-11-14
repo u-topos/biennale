@@ -3,7 +3,7 @@
     <title>U:topos</title>
     <link href="https://utopos-biennale.net/feed.xml" rel="self" />
     <link href="https://utopos-biennale.net" />
-    <updated>2026-11-14T18:42:48+01:00</updated>
+    <updated>2026-11-14T18:55:33+01:00</updated>
     <author>
         <name>Dëni Mustafa</name>
     </author>
@@ -16,15 +16,18 @@
         </author>
         <link href="https://utopos-biennale.net/international-open-call-for-artists.html"/>
         <id>https://utopos-biennale.net/international-open-call-for-artists.html</id>
+        <media:content url="https://utopos-biennale.net/media/posts/26/open-call-post-fi-4.jpg" medium="image" />
 
         <updated>2026-11-14T18:15:12+01:00</updated>
             <summary type="html">
                 <![CDATA[
+                        <img src="https://utopos-biennale.net/media/posts/26/open-call-post-fi-4.jpg" alt="" />
                     International Open Call for Artists 1. What could happen to one of your artworks in your absence? 2. Choose one of your artworks. What must remain unchanged, even if its form, material, and location change? 3. Choose one of your artworks. Write a short instruction&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
+                    <p><img src="https://utopos-biennale.net/media/posts/26/open-call-post-fi-4.jpg" class="type:primaryImage" alt="" /></p>
                 <h1><strong>International Open Call for Artists</strong></h1>
 <p> </p>
 <figure class="post__image"><img loading="lazy"  src="https://utopos-biennale.net/media/posts/26/open-call-post-02.jpg" alt="Poster for U:TOPOS : Biennale 2027 international open call for artists. Minimalist black typography on an off-white background, featuring “open call”, “questions: 1, 2, 3”, the deadline of 1 February 2027, and utopos-biennale.net." width="700" height="880" sizes="(max-width: 1920px) 100vw, 1920px" srcset="https://utopos-biennale.net/media/posts/26/responsive/open-call-post-02-xs.jpg 640w ,https://utopos-biennale.net/media/posts/26/responsive/open-call-post-02-sm.jpg 768w ,https://utopos-biennale.net/media/posts/26/responsive/open-call-post-02-md.jpg 1024w ,https://utopos-biennale.net/media/posts/26/responsive/open-call-post-02-lg.jpg 1366w ,https://utopos-biennale.net/media/posts/26/responsive/open-call-post-02-xl.jpg 1600w ,https://utopos-biennale.net/media/posts/26/responsive/open-call-post-02-2xl.jpg 1920w"></figure>
